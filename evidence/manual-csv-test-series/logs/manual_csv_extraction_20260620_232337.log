@@ -1,0 +1,15 @@
+timestamp=2026-06-20T23:23:37
+EFF_DAT=2026-06-16
+manual_csv_source_directory=\\10.10.0.123\qlite_manual_csv\
+expected_daily_orders_file=site06_orders_manual_export_2026-06-16.csv
+selected_customer_snapshot_file=site06_customers_manual_snapshot_2026-06-20.csv
+customer_snapshot_date=2026-06-20
+csv_files_found=site06_customers_manual_snapshot_2026-06-20.csv, site06_orders_manual_export_2026-06-16.csv, site06_orders_manual_export_2026-06-17.csv, site06_orders_manual_export_2026-06-18.csv, site06_orders_manual_export_2026-06-19.csv, site06_orders_manual_export_2026-06-20.csv
+orders_row_count=3
+customer_snapshot_row_count=8
+validation_status=SUCCESS_WITH_ROWS
+output_status=SUCCESS_WITH_ROWS
+staging_output_file_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\staging\2026-06-16\manual_csv_orders_2026-06-16.csv
+final_landing_output_file_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\landing\2026-06-16\manual_csv_orders_2026-06-16.csv
+output_action=REPLACED_EXISTING_FILE
+error_message=

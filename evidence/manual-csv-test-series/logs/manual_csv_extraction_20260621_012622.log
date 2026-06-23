@@ -1,0 +1,17 @@
+timestamp=2026-06-21T01:26:22
+EFF_DAT=2026-06-18
+manual_csv_source_directory=\\10.10.0.123\qlite_manual_csv\
+manual_csv_source_path_type=UNC
+manual_csv_unc_host=10.10.0.123
+expected_daily_orders_file=site06_orders_manual_export_2026-06-18.csv
+selected_customer_snapshot_file=
+customer_snapshot_date=
+csv_files_found=
+orders_row_count=
+customer_snapshot_row_count=
+validation_status=FAILED_SOURCE_UNREACHABLE
+output_status=FAILED_SOURCE_UNREACHABLE
+staging_output_file_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\staging\2026-06-18\manual_csv_orders_2026-06-18.csv
+final_landing_output_file_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\landing\2026-06-18\manual_csv_orders_2026-06-18.csv
+output_action=LEFT_EXISTING_FILE_UNCHANGED
+error_message=Manual CSV source share is unreachable: \\10.10.0.123\qlite_manual_csv\

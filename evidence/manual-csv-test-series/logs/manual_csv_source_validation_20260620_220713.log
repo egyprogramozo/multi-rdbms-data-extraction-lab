@@ -1,0 +1,20 @@
+Manual CSV source validation started
+timestamp=2026-06-20T22:07:13
+loaded_env_file=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\config\.env
+BUSINESS_DATE=2026-06-20
+MANUAL_CSV_SOURCE_DIR=\\10.10.0.123\qlite_manual_csv
+CUSTOMERS_SNAPSHOT_FILE_PATTERN=site06_customers_manual_snapshot_*.csv
+MANUAL_ORDERS_FILE_PATTERN=site06_orders_manual_export_{business_date}.csv
+expected_daily_orders_file=site06_orders_manual_export_2026-06-20.csv
+csv_files_found=6
+csv_file=site06_customers_manual_snapshot_2026-06-20.csv
+csv_file=site06_orders_manual_export_2026-06-16.csv
+csv_file=site06_orders_manual_export_2026-06-17.csv
+csv_file=site06_orders_manual_export_2026-06-18.csv
+csv_file=site06_orders_manual_export_2026-06-19.csv
+csv_file=site06_orders_manual_export_2026-06-20.csv
+selected_customer_snapshot_file=site06_customers_manual_snapshot_2026-06-20.csv
+customer_snapshot_rows=8
+daily_orders_rows=6
+customer_id_integrity_check=passed
+validation_status=success

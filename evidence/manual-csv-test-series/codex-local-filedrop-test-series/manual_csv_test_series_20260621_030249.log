@@ -1,0 +1,172 @@
+﻿manual_csv_test_series_start=2026-06-21T03:02:49.8626262+02:00
+project_root=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab
+baseline_dir=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\qlite_filepost_csv_baseline
+working_dir=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\qlite_filepost_csv
+
+==== T01_SUCCESS_WITH_ROWS_CREATED_OR_REPLACED ====
+start_time=2026-06-21T03:02:49.8814397+02:00
+source_manipulation=Reset working source from baseline.
+EFF_DAT=2026-06-16
+expected_status=SUCCESS_WITH_ROWS
+expected_output_action=
+exit_code=0
+actual_status=SUCCESS_WITH_ROWS
+output_action=REPLACED_EXISTING_FILE
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030250.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: REPLACED_EXISTING_FILE
+EFF_DAT: 2026-06-16
+Expected daily orders file: site06_orders_manual_export_2026-06-16.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\landing\2026-06-16\manual_csv_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030250.log
+console_output_end
+result=PASS
+
+==== T02_SUCCESS_WITH_ROWS_REPLACED_EXISTING ====
+start_time=2026-06-21T03:02:50.4752120+02:00
+source_manipulation=Appended one valid extra data row to 2026-06-16 orders file.
+EFF_DAT=2026-06-16
+expected_status=SUCCESS_WITH_ROWS
+expected_output_action=REPLACED_EXISTING_FILE
+exit_code=0
+actual_status=SUCCESS_WITH_ROWS
+output_action=REPLACED_EXISTING_FILE
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030250.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: REPLACED_EXISTING_FILE
+EFF_DAT: 2026-06-16
+Expected daily orders file: site06_orders_manual_export_2026-06-16.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\landing\2026-06-16\manual_csv_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030250.log
+console_output_end
+result=PASS
+
+==== T03_FAILED_MISSING_DAILY_ORDERS_FILE ====
+start_time=2026-06-21T03:02:51.0065514+02:00
+source_manipulation=Deleted 2026-06-17 daily orders file from working source.
+EFF_DAT=2026-06-17
+expected_status=FAILED_MISSING_FILE
+expected_output_action=
+exit_code=1
+actual_status=FAILED_MISSING_FILE
+output_action=LEFT_EXISTING_FILE_UNCHANGED
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030251.log
+console_output_begin
+Validation status: FAILED_MISSING_FILE
+Output status: FAILED_MISSING_FILE
+Output action: LEFT_EXISTING_FILE_UNCHANGED
+Error: Daily orders file does not exist: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\qlite_filepost_csv\site06_orders_manual_export_2026-06-17.csv
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030251.log
+console_output_end
+result=PASS
+
+==== T04_FAILED_MISSING_CUSTOMER_SNAPSHOT ====
+start_time=2026-06-21T03:02:51.5629530+02:00
+source_manipulation=Deleted customer snapshot file from working source.
+EFF_DAT=2026-06-16
+expected_status=FAILED_MISSING_FILE
+expected_output_action=
+exit_code=1
+actual_status=FAILED_MISSING_FILE
+output_action=LEFT_EXISTING_FILE_UNCHANGED
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030252.log
+console_output_begin
+Validation status: FAILED_MISSING_FILE
+Output status: FAILED_MISSING_FILE
+Output action: LEFT_EXISTING_FILE_UNCHANGED
+Error: No valid customer snapshot file found matching site06_customers_manual_snapshot_*.csv in C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\qlite_filepost_csv
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030252.log
+console_output_end
+result=PASS
+
+==== T05_FAILED_TOO_OLD_CUSTOMER_SNAPSHOT ====
+start_time=2026-06-21T03:02:52.1001901+02:00
+source_manipulation=Renamed customer snapshot from 2026-06-20 to 2026-06-10.
+EFF_DAT=2026-06-16
+expected_status=FAILED_VALIDATION
+expected_output_action=
+exit_code=1
+actual_status=FAILED_VALIDATION
+output_action=LEFT_EXISTING_FILE_UNCHANGED
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030252.log
+console_output_begin
+Validation status: FAILED_VALIDATION
+Output status: FAILED_VALIDATION
+Output action: LEFT_EXISTING_FILE_UNCHANGED
+Error: max(order_date) 2026-06-16 is greater than selected customer snapshot date 2026-06-10
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030252.log
+console_output_end
+result=PASS
+
+==== T06_SUCCESS_EMPTY ====
+start_time=2026-06-21T03:02:52.6473622+02:00
+source_manipulation=Replaced 2026-06-18 orders file with header-only file.
+EFF_DAT=2026-06-18
+expected_status=SUCCESS_EMPTY
+expected_output_action=
+exit_code=0
+actual_status=SUCCESS_EMPTY
+output_action=REPLACED_EXISTING_FILE
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030253.log
+console_output_begin
+Validation status: SUCCESS_EMPTY
+Output status: SUCCESS_EMPTY
+Output action: REPLACED_EXISTING_FILE
+EFF_DAT: 2026-06-18
+Expected daily orders file: site06_orders_manual_export_2026-06-18.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\landing\2026-06-18\manual_csv_orders_2026-06-18.csv
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030253.log
+console_output_end
+result=PASS
+
+==== T07_FAILED_INVALID_ORDER_DATE ====
+start_time=2026-06-21T03:02:53.2101179+02:00
+source_manipulation=Changed one 2026-06-16 order_date to 2027-06-16.
+EFF_DAT=2026-06-16
+expected_status=FAILED_VALIDATION
+expected_output_action=
+exit_code=1
+actual_status=FAILED_VALIDATION
+output_action=LEFT_EXISTING_FILE_UNCHANGED
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030253.log
+console_output_begin
+Validation status: FAILED_VALIDATION
+Output status: FAILED_VALIDATION
+Output action: LEFT_EXISTING_FILE_UNCHANGED
+Error: max(order_date) 2027-06-16 is greater than selected customer snapshot date 2026-06-20
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030253.log
+console_output_end
+result=PASS
+
+==== T08_OTHER_DATE_FILE_MISSING_DOES_NOT_BLOCK_CURRENT_EFF_DAT ====
+start_time=2026-06-21T03:02:53.7562490+02:00
+source_manipulation=Deleted unrelated 2026-06-17 daily orders file while running 2026-06-18.
+EFF_DAT=2026-06-18
+expected_status=SUCCESS_WITH_ROWS
+expected_output_action=
+exit_code=0
+actual_status=SUCCESS_WITH_ROWS
+output_action=REPLACED_EXISTING_FILE
+extraction_log_path=C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030254.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: REPLACED_EXISTING_FILE
+EFF_DAT: 2026-06-18
+Expected daily orders file: site06_orders_manual_export_2026-06-18.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\data\landing\2026-06-18\manual_csv_orders_2026-06-18.csv
+Log file: C:\Users\CodexLabUser\CodexLab\multi-rdbms-data-extraction-lab\logs\manual_csv_extraction_20260621_030254.log
+console_output_end
+result=PASS
+
+manual_csv_test_series_end=2026-06-21T03:02:54.3054736+02:00
+restored_config_env=true
+restored_working_source_from_baseline=true
