@@ -1,0 +1,317 @@
+﻿full_extraction_test_series_start=2026-06-21T07:55:29.8753138+02:00
+project_root=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1
+config_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\config\.env
+env_backup_path=C:\Users\CodexLabUser\AppData\Local\Temp\multi_rdbms_config_env_20260621_075529.bak
+original_EFF_DAT=2026-06-16
+tested_EFF_DAT_values=2026-06-16, 2026-06-17, 2026-06-18, 2026-06-19, 2026-06-20
+
+==== DATE_SERIES ====
+EFF_DAT=2026-06-16
+script_run=DATE_SERIES manual
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\check_manual_csv_source.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075530.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: REPLACED_EXISTING_FILE
+EFF_DAT: 2026-06-16
+Expected daily orders file: site06_orders_manual_export_2026-06-16.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\manual_csv_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075530.log
+console_output_end
+script_run=DATE_SERIES database
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075533.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action           landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mssql_orders_2026-06-16.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\oracle_orders_2026-06-16.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\db2_orders_2026-06-16.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mysql_orders_2026-06-16.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\postgresql_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075533.log
+console_output_end
+manual_result=SUCCESS_WITH_ROWS exit=0
+manual_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075530.log
+database_exit_code=0
+database_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075533.log
+landing_dir_exists=True
+staging_dir_exists=True
+csv_row_count_mssql=3
+csv_row_count_oracle=3
+csv_row_count_db2=3
+csv_row_count_mysql=3
+csv_row_count_postgresql=3
+status=PASS
+notes=
+
+==== DATE_SERIES ====
+EFF_DAT=2026-06-17
+script_run=DATE_SERIES manual
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\check_manual_csv_source.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075534.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: CREATED_NEW_FILE
+EFF_DAT: 2026-06-17
+Expected daily orders file: site06_orders_manual_export_2026-06-17.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-17\manual_csv_orders_2026-06-17.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075534.log
+console_output_end
+script_run=DATE_SERIES database
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075537.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action     landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-17\database_sources\mssql_orders_2026-06-17.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-17\database_sources\oracle_orders_2026-06-17.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-17\database_sources\db2_orders_2026-06-17.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-17\database_sources\mysql_orders_2026-06-17.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-17\database_sources\postgresql_orders_2026-06-17.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075537.log
+console_output_end
+manual_result=SUCCESS_WITH_ROWS exit=0
+manual_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075534.log
+database_exit_code=0
+database_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075537.log
+landing_dir_exists=True
+staging_dir_exists=True
+csv_row_count_mssql=4
+csv_row_count_oracle=4
+csv_row_count_db2=4
+csv_row_count_mysql=4
+csv_row_count_postgresql=4
+status=PASS
+notes=
+
+==== DATE_SERIES ====
+EFF_DAT=2026-06-18
+script_run=DATE_SERIES manual
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\check_manual_csv_source.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075538.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: CREATED_NEW_FILE
+EFF_DAT: 2026-06-18
+Expected daily orders file: site06_orders_manual_export_2026-06-18.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-18\manual_csv_orders_2026-06-18.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075538.log
+console_output_end
+script_run=DATE_SERIES database
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075542.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action     landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-18\database_sources\mssql_orders_2026-06-18.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-18\database_sources\oracle_orders_2026-06-18.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-18\database_sources\db2_orders_2026-06-18.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-18\database_sources\mysql_orders_2026-06-18.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-18\database_sources\postgresql_orders_2026-06-18.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075542.log
+console_output_end
+manual_result=SUCCESS_WITH_ROWS exit=0
+manual_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075538.log
+database_exit_code=0
+database_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075542.log
+landing_dir_exists=True
+staging_dir_exists=True
+csv_row_count_mssql=4
+csv_row_count_oracle=4
+csv_row_count_db2=4
+csv_row_count_mysql=4
+csv_row_count_postgresql=4
+status=PASS
+notes=
+
+==== DATE_SERIES ====
+EFF_DAT=2026-06-19
+script_run=DATE_SERIES manual
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\check_manual_csv_source.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075542.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: CREATED_NEW_FILE
+EFF_DAT: 2026-06-19
+Expected daily orders file: site06_orders_manual_export_2026-06-19.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-19\manual_csv_orders_2026-06-19.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075542.log
+console_output_end
+script_run=DATE_SERIES database
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075546.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action     landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-19\database_sources\mssql_orders_2026-06-19.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-19\database_sources\oracle_orders_2026-06-19.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-19\database_sources\db2_orders_2026-06-19.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-19\database_sources\mysql_orders_2026-06-19.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       4          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-19\database_sources\postgresql_orders_2026-06-19.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075546.log
+console_output_end
+manual_result=SUCCESS_WITH_ROWS exit=0
+manual_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075542.log
+database_exit_code=0
+database_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075546.log
+landing_dir_exists=True
+staging_dir_exists=True
+csv_row_count_mssql=4
+csv_row_count_oracle=4
+csv_row_count_db2=4
+csv_row_count_mysql=4
+csv_row_count_postgresql=4
+status=PASS
+notes=
+
+==== DATE_SERIES ====
+EFF_DAT=2026-06-20
+script_run=DATE_SERIES manual
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\check_manual_csv_source.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075546.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: CREATED_NEW_FILE
+EFF_DAT: 2026-06-20
+Expected daily orders file: site06_orders_manual_export_2026-06-20.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-20\manual_csv_orders_2026-06-20.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075546.log
+console_output_end
+script_run=DATE_SERIES database
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075550.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action     landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       8          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-20\database_sources\mssql_orders_2026-06-20.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       8          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-20\database_sources\oracle_orders_2026-06-20.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       8          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-20\database_sources\db2_orders_2026-06-20.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       8          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-20\database_sources\mysql_orders_2026-06-20.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       8          SUCCESS_WITH_ROWS  CREATED_NEW_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-20\database_sources\postgresql_orders_2026-06-20.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075550.log
+console_output_end
+manual_result=SUCCESS_WITH_ROWS exit=0
+manual_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075546.log
+database_exit_code=0
+database_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075550.log
+landing_dir_exists=True
+staging_dir_exists=True
+csv_row_count_mssql=8
+csv_row_count_oracle=8
+csv_row_count_db2=8
+csv_row_count_mysql=8
+csv_row_count_postgresql=8
+status=PASS
+notes=
+
+==== RERUN_REPLACEMENT ====
+EFF_DAT=2026-06-16
+script_run=RERUN_REPLACEMENT manual
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\check_manual_csv_source.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075550.log
+console_output_begin
+Validation status: SUCCESS_WITH_ROWS
+Output status: SUCCESS_WITH_ROWS
+Output action: REPLACED_EXISTING_FILE
+EFF_DAT: 2026-06-16
+Expected daily orders file: site06_orders_manual_export_2026-06-16.csv
+Selected customer snapshot file: site06_customers_manual_snapshot_2026-06-20.csv
+Final landing output file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\manual_csv_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075550.log
+console_output_end
+script_run=RERUN_REPLACEMENT database
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075554.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action           landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mssql_orders_2026-06-16.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\oracle_orders_2026-06-16.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\db2_orders_2026-06-16.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mysql_orders_2026-06-16.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\postgresql_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075554.log
+console_output_end
+manual_result=SUCCESS_WITH_ROWS exit=0
+manual_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\manual_csv_extraction_20260621_075550.log
+database_exit_code=0
+database_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075554.log
+landing_dir_exists=True
+staging_dir_exists=True
+csv_row_count_mssql=3
+csv_row_count_oracle=3
+csv_row_count_db2=3
+csv_row_count_mysql=3
+csv_row_count_postgresql=3
+status=PASS
+notes=
+
+==== MYSQL_PORT_FAILURE_SIMULATION ====
+script_run=MYSQL_PORT_FAILURE_SIMULATION baseline
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=0
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075557.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status             output_action           landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------  ----------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mssql_orders_2026-06-16.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\oracle_orders_2026-06-16.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\db2_orders_2026-06-16.csv       
+MySQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mysql_orders_2026-06-16.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS  REPLACED_EXISTING_FILE  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\postgresql_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075557.log
+console_output_end
+script_run=MYSQL_PORT_FAILURE_SIMULATION invalid_mysql_port
+script_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\src\extract_database_sources.py
+exit_code=1
+generated_log_paths=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075606.log
+console_output_begin
+source      tcp_status  connection_status  query_status  row_count  status                   output_action                 landing_file                                                                                                                                        
+----------  ----------  -----------------  ------------  ---------  -----------------------  ----------------------------  ----------------------------------------------------------------------------------------------------------------------------------------------------
+MSSQL       SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS        REPLACED_EXISTING_FILE        C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mssql_orders_2026-06-16.csv     
+Oracle      SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS        REPLACED_EXISTING_FILE        C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\oracle_orders_2026-06-16.csv    
+DB2         SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS        REPLACED_EXISTING_FILE        C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\db2_orders_2026-06-16.csv       
+MySQL       FAILED      SKIPPED            SKIPPED                  FAILED_PORT_UNREACHABLE  LEFT_EXISTING_FILE_UNCHANGED  C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mysql_orders_2026-06-16.csv     
+PostgreSQL  SUCCESS     SUCCESS            SUCCESS       3          SUCCESS_WITH_ROWS        REPLACED_EXISTING_FILE        C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\postgresql_orders_2026-06-16.csv
+Log file: C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075606.log
+console_output_end
+baseline_exit_code=0
+mysql_landing_file=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\data\landing\2026-06-16\database_sources\mysql_orders_2026-06-16.csv
+before_sha256=E293B6FEFEE3F329D2181FE9EF7E34BE000A12EF4BCED1A638F45D955EE3DE59
+before_last_write_utc=2026-06-21T05:55:57.8110384Z
+failure_exit_code=1
+failure_log_path=C:\Users\CodexLabUser\RepoSmokeTest\multi-rdbms-data-extraction-lab-v2.0.1\logs\database_extraction_20260621_075606.log
+mysql_status=FAILED_PORT_UNREACHABLE
+mysql_output_action=LEFT_EXISTING_FILE_UNCHANGED
+after_sha256=E293B6FEFEE3F329D2181FE9EF7E34BE000A12EF4BCED1A638F45D955EE3DE59
+after_last_write_utc=2026-06-21T05:55:57.8110384Z
+landing_file_protected=True
+status=PASS
+notes=
+
+restored_config_env=True
+full_extraction_test_series_end=2026-06-21T07:56:06.4513929+02:00
+final_status=PASS

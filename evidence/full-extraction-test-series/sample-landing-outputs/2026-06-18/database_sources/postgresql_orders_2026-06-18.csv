@@ -1,0 +1,5 @@
+source_system,site_code,site_name,order_event_id,order_id,customer_id,customer_name,customer_city,order_date,amount,status,eff_dat,last_update_at,customer_created_at
+POSTGRESQL,SITE03,Pecs store,8,2,2,Biro Adam,Komlo,2026-06-16,6590.00,SHIPPED,2026-06-18,2026-06-18 09:20:00,2026-06-21 03:32:58.191741
+POSTGRESQL,SITE03,Pecs store,9,4,4,Vincze Patrik,Szigetvar,2026-06-17,36990.00,PAID,2026-06-18,2026-06-18 10:05:00,2026-06-21 03:32:58.191741
+POSTGRESQL,SITE03,Pecs store,10,6,6,Hegedus Aron,Bonyhad,2026-06-18,24990.00,NEW,2026-06-18,2026-06-18 12:40:00,2026-06-21 03:32:58.191741
+POSTGRESQL,SITE03,Pecs store,11,7,7,Somogyi Petra,Szekszard,2026-06-18,17990.00,PAID,2026-06-18,2026-06-18 15:30:00,2026-06-21 03:32:58.191741

@@ -1,0 +1,9 @@
+source_system,site_code,site_name,order_event_id,order_id,customer_id,customer_name,customer_city,order_date,amount,status,eff_dat,last_update_at,customer_created_at
+MYSQL,SITE04,Szeged store,16,4,4,Nemes Dora,Kiskunhalas,2026-06-17,37990.00,CANCELLED,2026-06-20,2026-06-20 08:20:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,17,7,7,Polgar David,Oroshaza,2026-06-18,18990.00,SHIPPED,2026-06-20,2026-06-20 09:35:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,18,8,8,Halasz Reka,Bekescsaba,2026-06-19,8990.00,PAID,2026-06-20,2026-06-20 10:40:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,19,11,3,Kovacs Bence,Mako,2026-06-20,28990.00,PAID,2026-06-20,2026-06-20 11:30:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,20,12,4,Nemes Dora,Kiskunhalas,2026-06-20,17990.00,NEW,2026-06-20,2026-06-20 12:50:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,21,13,5,Fodor Erik,Baja,2026-06-20,9790.00,PAID,2026-06-20,2026-06-20 13:15:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,22,14,6,Antal Zsofia,Kecskemet,2026-06-20,35990.00,SHIPPED,2026-06-20,2026-06-20 15:05:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,23,15,7,Polgar David,Oroshaza,2026-06-20,11990.00,NEW,2026-06-20,2026-06-20 16:30:00,2026-06-21 03:34:53

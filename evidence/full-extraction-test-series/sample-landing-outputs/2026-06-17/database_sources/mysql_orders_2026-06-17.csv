@@ -1,0 +1,5 @@
+source_system,site_code,site_name,order_event_id,order_id,customer_id,customer_name,customer_city,order_date,amount,status,eff_dat,last_update_at,customer_created_at
+MYSQL,SITE04,Szeged store,4,1,1,Sipos Laura,Szeged,2026-06-16,21990.00,SHIPPED,2026-06-17,2026-06-17 08:30:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,5,2,2,Varga Milan,Hodmezovasarhely,2026-06-16,7590.00,PAID,2026-06-17,2026-06-17 11:15:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,6,4,4,Nemes Dora,Kiskunhalas,2026-06-17,37990.00,NEW,2026-06-17,2026-06-17 14:05:00,2026-06-21 03:34:53
+MYSQL,SITE04,Szeged store,7,5,5,Fodor Erik,Baja,2026-06-17,10990.00,PAID,2026-06-17,2026-06-17 16:20:00,2026-06-21 03:34:53

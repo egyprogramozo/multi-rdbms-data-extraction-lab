@@ -1,0 +1,9 @@
+source_system,site_code,site_name,order_event_id,order_id,customer_id,customer_name,customer_city,order_date,amount,status,eff_dat,last_update_at,customer_created_at
+SQLSERVER,SITE02,Debrecen store,16,4,4,Juhasz Lilla,Berettyoujfalu,2026-06-17,35990.00,CANCELLED,2026-06-20,2026-06-20 08:20:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,17,7,7,Kelemen Gabor,Balmazujvaros,2026-06-18,16990.00,SHIPPED,2026-06-20,2026-06-20 09:35:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,18,8,8,Barta Emese,Karcag,2026-06-19,6990.00,PAID,2026-06-20,2026-06-20 10:40:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,19,11,3,Papp Mark,Nyiregyhaza,2026-06-20,26990.00,PAID,2026-06-20,2026-06-20 11:30:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,20,12,4,Juhasz Lilla,Berettyoujfalu,2026-06-20,15990.00,NEW,2026-06-20,2026-06-20 12:50:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,21,13,5,Lakatos Mate,Hajduszoboszlo,2026-06-20,7790.00,PAID,2026-06-20,2026-06-20 13:15:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,22,14,6,Simon Rita,Derecske,2026-06-20,33990.00,SHIPPED,2026-06-20,2026-06-20 15:05:00,2026-06-21 03:30:50.087907
+SQLSERVER,SITE02,Debrecen store,23,15,7,Kelemen Gabor,Balmazujvaros,2026-06-20,9990.00,NEW,2026-06-20,2026-06-20 16:30:00,2026-06-21 03:30:50.087907
