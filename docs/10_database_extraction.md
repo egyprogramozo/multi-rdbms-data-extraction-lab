@@ -26,7 +26,7 @@ Példa lokális futtatás Windows PowerShellből:
 python .\src\extract_database_sources.py
 ```
 
-Megjegyzés: a script, a kapcsolódó `src/` tartalom, a mintakonfiguráció és a függőségi fájlok későbbi commitban kerülnek publikálásra. Ez a dokumentum most a futási eredményeket és a hozzájuk tartozó bizonyítékokat rögzíti.
+A kapcsolódó `src/` tartalom, a mintakonfiguráció és a függőségi fájlok a repóban külön fájlokként megtalálhatók. A tényleges lokális `config/.env` fájl és a Db2 JDBC driver JAR nem része a publikus repónak.
 
 ## Feldolgozott források
 

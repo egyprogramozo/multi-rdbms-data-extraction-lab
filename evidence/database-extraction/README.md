@@ -50,7 +50,7 @@ Ezek ugyanazt a működési logikát mutatják egy korábbi lokális munkamappá
 
 A logokban látható lokális mappanevek, például `RepoSmokeTest` vagy `multi-rdbms-data-extraction-lab-v2.0.1`, a teszteléshez használt helyi munkamappák nevei. Ezek nem publikus release-verzióként értelmezendők.
 
-A runtime `data/` kimenetek nem kerülnek közvetlenül verziózásra. A többnapos teljes tesztsorozat válogatott mintakimenetei külön evidence commitban szerepelnek majd:
+A runtime `data/` kimenetek nem kerülnek közvetlenül verziózásra. A többnapos teljes tesztsorozat válogatott mintakimenetei a következő evidence mappában találhatók:
 
 ```text
 evidence/full-extraction-test-series/sample-landing-outputs/

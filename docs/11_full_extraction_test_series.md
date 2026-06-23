@@ -14,7 +14,7 @@ A teljes tesztsorozatot futtató PowerShell script:
 tools/run_full_extraction_test_series.ps1
 ```
 
-Megjegyzés: a tesztfuttató script későbbi commitban, a `tools/` mappában kerül publikálásra. Ez a commit a teljes tesztsorozat dokumentációját, képi bizonyítékát, logjait és mintakimeneteit tartalmazza.
+A tesztfuttató script a repó `tools/` mappájában található. A teljes tesztsorozat dokumentációja, képi bizonyítéka, logjai és válogatott mintakimenetei az ehhez tartozó `docs/`, `images/` és `evidence/` mappákban szerepelnek.
 
 A gép PowerShell execution policy beállítása miatt a futás kontrollált tesztkörnyezetben így történt:
 
@@ -29,7 +29,7 @@ src/check_manual_csv_source.py
 src/extract_database_sources.py
 ```
 
-A két Python script későbbi commitban, a `src/` mappában kerül publikálásra.
+A két Python script a repó `src/` mappájában található.
 
 ## Tesztelt napok
 

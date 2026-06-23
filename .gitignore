@@ -3,7 +3,7 @@
 config/.env
 
 # Runtime output
-logs/
+/logs/
 data/landing/*
 !data/landing/.gitkeep
 data/staging/*

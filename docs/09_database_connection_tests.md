@@ -38,7 +38,7 @@ A kiegészítő Python csomagok:
 requirements_database.txt
 ```
 
-Megjegyzés: a script és a hozzá kapcsolódó Python függőségi fájl későbbi commitban, a `src/` és konfigurációs részekkel együtt kerül publikálásra. Ez a dokumentum most a kapcsolati teszt eredményeit és bizonyítékait rögzíti.
+A script és a hozzá kapcsolódó Python függőségi fájl a repóban megtalálható a `src/` mappában, illetve a gyökérszintű `requirements_database.txt` fájlban.
 
 Példa lokális futtatás Windows PowerShellből:
 
@@ -122,7 +122,7 @@ A végső futásban mind az öt adatbázisos forrás `SUCCESS_WITH_ROWS` státus
 
 ![Végső 5/5 adatbázisos siker](../images/09_database_connection_tests/06_all_five_database_sources_success.png)
 
-Megjegyzés: a képernyőképen látható, kódhoz és konfigurációhoz kapcsolódó fájlok (`src/`, `config/.env.example`, `requirements_database.txt`, `.gitignore`) későbbi commitokban kerülnek publikálásra. Ebben a commitban a connection checkpoint dokumentációja és bizonyítékai szerepelnek.
+Megjegyzés: a képernyőképen látható, kódhoz és konfigurációhoz kapcsolódó fájlok (`src/`, `config/.env.example`, `requirements_database.txt`, `.gitignore`) a repóban külön fájlokként megtalálhatók. A tényleges lokális `config/.env` fájl továbbra sem része a publikus repónak.
 
 ## Fontosabb diagnosztikai tanulságok
 
