@@ -84,3 +84,5 @@ A v2.0 labkörnyezetben a PowerShell scriptek a lokálisan használt Python tele
 TODO: Későbbi verzióban a hardcode-olt Python útvonal helyett érdemes `PYTHON_EXE` környezeti változó override-ot használni, majd fallback-ként a `python` vagy `py` parancsot keresni a `PATH` alapján.
 
 Ez hordozhatóbbá tenné a tesztfuttató scripteket más gépeken vagy eltérő Python-verziók mellett.
+
+Megjegyzés: a PowerShell tesztfuttató scriptek a jelenlegi Windows labkörnyezethez illeszkednek. Későbbi hordozhatósági fejlesztésként érdemes lehet a tesztsorozatok futtatását platformfüggetlenebb módon is kialakítani, például Python-alapú vezérlő script, Bash script vagy konténeres futtatási belépési pont segítségével.

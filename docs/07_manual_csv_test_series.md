@@ -85,6 +85,9 @@ A következő képek a lezáró Codex tesztsorozat előtti kézi PowerShell-vali
 - **T04**: hiányzó customer snapshot;
 - **T05**: a customer snapshot fájldátuma korábbi, mint a feldolgozott orders fájl legnagyobb `order_date` értéke;
 - **T06**: csak fejlécet tartalmazó 2026-06-18 orders fájl, `SUCCESS_EMPTY` eredménnyel;
+  
+  Megjegyzés: a `SUCCESS_EMPTY` technikailag sikeres futásnak számít, mert a forrásfájl létezik és szerkezetileg érvényes, csak üzleti sort nem tartalmaz. Production környezetben egy ilyen esetet érdemes lehet külön warningként kezelni, mert üzletileg vizsgálandó lehet, ha egy adott napi forrásállomány teljesen üres.
+
 - **T07**: hibás `order_date` jövőbeli dátummal;
 - **T08**: nem aktuális EFF_DAT-hez tartozó fájl hiánya nem blokkolja az aktuális futást.
 

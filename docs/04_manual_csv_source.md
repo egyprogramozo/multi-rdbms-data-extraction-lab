@@ -38,6 +38,8 @@ manual_csv_filedrop/
 
 Ez az a mappa, amelyből a kinyerő script dolgozik.
 
+Megjegyzés: a `manual_csv_filedrop/` mappa a labban egyszerű file-drop bemenet, de logikailag adatátadási szerződésként is értelmezhető. A fájlnév, az elvárt oszlopok, az `EFF_DAT` értékek és a customer hivatkozások együtt adják azt a minimális interfészt, amelyet a forrásoldali manuális exportnak teljesítenie kell. A validációs logika ezt az elvárt bemeneti szerkezetet ellenőrzi.
+
 A védett baseline mappa:
 
 ```text
