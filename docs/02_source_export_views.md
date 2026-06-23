@@ -73,7 +73,7 @@ TODO: A későbbi verzióban a string-interpolált SQL összeállítás helyett 
 
 ## Ellenőrzött működés
 
-A forrásoldali nézeteket először kézi lekérdezésekkel ellenőriztük, majd a connection checker mind az öt adatbázisos forrásnál sikeresen lekérdezte a nézeteket `EFF_DAT=2026-06-16` értékkel.
+A forrásoldali nézetek először kézi lekérdezésekkel kerültek ellenőrzésre, majd a connection checker mind az öt adatbázisos forrásnál sikeresen lekérdezte a nézeteket `EFF_DAT=2026-06-16` értékkel.
 
 A v2.0 verzióban a nézetekből már tényleges CSV landing kinyerés is megtörtént több `EFF_DAT` napra:
 

@@ -4,7 +4,7 @@
 
 A manual CSV forrás eredetileg SMB megosztáson keresztül volt elérhető a laborkörnyezetben.
 
-A tesztek során külön ellenőriztük, hogy a Codex sessionből indított parancsok ugyanúgy elérik-e ezt a megosztást, mint a `CodexLabUser` környezetből indított kézi PowerShell futtatások.
+A tesztek során külön ellenőrzésre került, hogy a Codex sessionből indított parancsok ugyanúgy elérik-e ezt a megosztást, mint a `CodexLabUser` környezetből indított kézi PowerShell futtatások.
 
 A dokumentum célja annak bemutatása, hogy a projekt hol húzza meg a határt a fájlátadás és az adatkinyerés között.
 

@@ -50,7 +50,7 @@ Codex workspace test for Multi-RDBMS Data Extraction Lab.
 Ne hozz létre és ne módosíts más fájlt.
 ```
 
-Ezzel ellenőriztük, hogy:
+Ez igazolta, hogy:
 
 - a Codex elindul a projektmappában;
 - a munkakönyvtár helyes;
