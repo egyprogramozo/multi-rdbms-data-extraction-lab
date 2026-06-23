@@ -47,6 +47,8 @@ Az egyes adatbázis-driverek a lekérdezési metaadatokban eltérő kis- és nag
 
 Későbbi fejlesztés lehet egy külön canonical output mapping réteg, amely minden forrásnál egységesített CSV fejléceket állít elő.
 
+Megjegyzés: production környezetben külön kezelendő kérdés a forrásoldali sémaváltozás, például új oszlop megjelenése, oszlop átnevezése vagy adattípus változása. Későbbi verzióban érdemes lehet az export nézetek elvárt oszloplistáját és adattípusait külön schema contract vagy metadata leírás alapján ellenőrizni, majd eltérés esetén figyelmeztetést vagy kontrollált hibát adni.
+
 ## Nézetek forrásonként
 
 | Forrás     | Export nézet                      |

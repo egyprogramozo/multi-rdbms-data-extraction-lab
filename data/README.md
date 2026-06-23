@@ -16,3 +16,5 @@ A `landing` mappa a végleges, frissített kimeneti terület. Egy meglévő land
 A safe replace logika szempontjából fontos, hogy ha a staging fájl írása közben hiba történik, például betelik a lemez, akkor a landing csere nem fut le, ezért a korábbi landing fájl megmarad. Ilyenkor részleges staging fájl maradhat vissza, ezért production környezetben a runtime adatkönyvtárat érdemes külön adatlemezen, megfelelő szabad hely figyeléssel és karbantartással kezelni, hogy a kimeneti fájlok növekedése ne veszélyeztesse az operációs rendszer működését.
 
 A generált runtime CSV fájlok szándékosan nem részei a publikus repónak. A mappaszerkezetet `.gitkeep` fájlok őrzik meg, míg a tesztelt mintakimenetek és futási logok az `evidence/` mappában találhatók.
+
+Megjegyzés: a projekt jelenlegi verziója CSV landing kimeneteket használ, mert ez egyszerűen ellenőrizhető és jól olvasható portfólió-lab környezetben. Későbbi fejlesztési irányként érdemes lehet oszlopalapú, sémát is megőrző fájlformátumok, például Apache Parquet vizsgálata is. Ez modern Data Lake / Lakehouse környezetek felé természetes továbbfejlesztési lépés lehet.

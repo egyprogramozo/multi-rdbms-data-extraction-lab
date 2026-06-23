@@ -211,3 +211,5 @@ Bizonyított működés:
 - részleges hiba kezelése;
 - meglévő landing fájl megőrzése hibás forrásnál;
 - `.env` visszaállítása teszt után.
+
+Megjegyzés: Későbbi verzióban érdemes lehet futási manifest fájlt is előállítani, például `manifest.json` formában. Ez az adott `EFF_DAT` futás összesített jegyzőkönyve lehetne: forrásonkénti státusz, kinyert sorok száma, létrejött fájlok neve, futási időpont és opcionálisan a generált fájlok hash értéke. Ez a klasszikus DWH kontrolltáblás gondolkodás fájlalapú landing zónára alkalmazott megfelelője lenne.

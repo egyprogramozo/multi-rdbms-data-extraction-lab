@@ -26,6 +26,8 @@ A jogosultsági modell ettől még forrásonként least-privilege szemléletű: 
 
 Valós környezetben ez motoronként és forrásonként külön hitelesítést, secret-kezelést, hozzáférés-rotációt és környezetspecifikus jogosultságbeállítást kapna.
 
+Megjegyzés: Production környezetben a lokális `.env` alapú konfiguráció helyett központi secret-kezelés lenne indokolt. Ilyen lehet például egy vállalati Secrets Manager, Vault, CyberArk vagy felhőalapú secret store. Ebben az esetben a futtató környezet a szükséges connection adatokat kontrollált módon, környezeti változóként vagy jóváhagyott secret-kezelő integráción keresztül kapná meg.
+
 ## Jogosultsági modell
 
 A célmodell:
