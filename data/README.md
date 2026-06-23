@@ -13,4 +13,6 @@ A `staging` mappa az ideiglenes írási terület. A kinyerő folyamat először 
 
 A `landing` mappa a végleges, frissített kimeneti terület. Egy meglévő landing fájl csak akkor cserélődik, ha az adott forrás új kinyerése sikeresen lefutott.
 
+A safe replace logika szempontjából fontos, hogy ha a staging fájl írása közben hiba történik, például betelik a lemez, akkor a landing csere nem fut le, ezért a korábbi landing fájl megmarad. Ilyenkor részleges staging fájl maradhat vissza, ezért production környezetben a runtime adatkönyvtárat érdemes külön adatlemezen, megfelelő szabad hely figyeléssel és karbantartással kezelni, hogy a kimeneti fájlok növekedése ne veszélyeztesse az operációs rendszer működését.
+
 A generált runtime CSV fájlok szándékosan nem részei a publikus repónak. A mappaszerkezetet `.gitkeep` fájlok őrzik meg, míg a tesztelt mintakimenetek és futási logok az `evidence/` mappában találhatók.

@@ -109,6 +109,8 @@ Ha a forrás hibára fut, és nem volt korábbi landing fájl:
 NO_OUTPUT_CREATED
 ```
 
+A safe replace logika szempontjából fontos, hogy ha a staging fájl írása közben hiba történik, például betelik a lemez, akkor a landing csere nem fut le, ezért a korábbi landing fájl megmarad. Ilyenkor részleges staging fájl maradhat vissza, ezért production környezetben a runtime adatkönyvtárat érdemes külön adatlemezen, megfelelő szabad hely figyeléssel és karbantartással kezelni, hogy a kimeneti fájlok növekedése ne veszélyeztesse az operációs rendszer működését.
+
 ## Staging-kezelési megjegyzés
 
 A DB extractor és a manual CSV ág ugyanazt a fő safe replace célt követi: csak sikeres kinyerés után frissülhet a landing output, hiba esetén pedig a meglévő landing fájl érintetlen marad.
