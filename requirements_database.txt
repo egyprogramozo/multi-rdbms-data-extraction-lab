@@ -1,0 +1,7 @@
+python-dotenv
+oracledb
+psycopg2-binary
+mysql-connector-python
+pymssql
+JayDeBeApi
+JPype1

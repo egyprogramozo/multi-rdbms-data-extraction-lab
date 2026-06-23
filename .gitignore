@@ -1,0 +1,26 @@
+# Local configuration
+.env
+config/.env
+
+# Runtime output
+logs/
+data/landing/*
+!data/landing/.gitkeep
+data/staging/*
+!data/staging/.gitkeep
+
+# Local database drivers / external binaries
+local_drivers/
+*.jar
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
